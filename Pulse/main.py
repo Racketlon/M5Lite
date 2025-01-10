@@ -5,10 +5,10 @@ from vm import PulseVM
 def main():
     # Set up argument parsing with "pulse" as the program name
     parser = argparse.ArgumentParser(
-        description="Pulse Interpreter for .pls files.",
+        description="Pulse Interpreter for .pulse files.",
         prog="pulse"  # Set the program name to "pulse"
     )
-    parser.add_argument("file", help="The .pls file to interpret and execute.")
+    parser.add_argument("file", help="The .pulse file to interpret and execute.")
     args = parser.parse_args()
 
     # Pass the argument to the Pulse interpreter
