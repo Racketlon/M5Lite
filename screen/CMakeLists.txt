@@ -1,0 +1,11 @@
+idf_component_register(SRCS "screen_manager.h"
+                            "task_manager.h"
+                            "layout/app_layout.h"
+                            "layout/app_manager.h"
+                            "layout/app_viewer.h"
+                            "layout/gesture.h"
+                            "ui/keyboard.h"
+                            "ui/notification_manager.h"
+                            "ui/status_bar.h"
+                    INCLUDE_DIRS "."
+                    REQUIRES lib)

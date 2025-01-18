@@ -25,18 +25,11 @@ README.md                 # Project documentation
 ## Prerequisites
 - **Python**: Make sure Python 3.10 or higher is installed on your system.
 
-## Installation
-To run the interpreter, simply use the following command:
-
-```bash
-python3 main.py
-```
-
 ## Usage
 To execute a Pulse program, run the following command:
 
 ```bash
-python3 main.py examples/helloworld.pls
+pulse examples/helloworld.pulse
 ```
 
 ## Clean Build

@@ -92,7 +92,14 @@ python3 flash/install_pulse.py
 python3 flash/flash_os.py
 ```
 
-3. Deploy Applications: Use the Pulse interpreter to execute your `.pls` files, or customize and upload the `main.ino` file in Arduino IDE/PlatformIO.
+3. Set Up the ESP-IDF Environment: Clone the ESP-IDF repository and install the required tools:
+
+```bash
+git clone --recursive https://github.com/espressif/esp-idf.git
+cd esp-idf
+./install.sh
+. ./export.sh
+```
 
 ## Usage
 

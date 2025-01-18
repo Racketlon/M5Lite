@@ -1,10 +1,14 @@
 #include <M5EPD.h>
-#include <SD.h> // Ensure the correct library is included
-#include "../pulse/compiler/Compiler.h"
-#include "../Screen/screen_manager.h"
-#include "../Screen/gesture.h"
-#include "../Screen/status_bar.h"
-#include "../Screen/app_manager.h"
+#include <SD.h> 
+#include "pulse/compiler/Compiler.h"
+#include "screen/screen_manager.h"
+#include "screen/task_manager.h"
+#include "screen/layout/app_layout.h"
+#include "screen/layout/app_manager.h"
+#include "screen/layout/app_viewer.h"
+#include "screen/layout/gesture.h"
+#include "screen/ui/notification_manager.h"
+#include "screen/ui/status_bar.h"
 
 M5EPD_Canvas canvas(&M5.EPD);
 ScreenManager screenManager(&canvas);
