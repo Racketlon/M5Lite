@@ -1,6 +1,6 @@
 import argparse
-from Interpreter import PulseInterpreter
-from vm import PulseVM
+from interpreter.Interpreter import PulseInterpreter
+from interpreter.vm import PulseVM
 
 def main():
     # Set up argument parsing with "pulse" as the program name

@@ -9,6 +9,7 @@
 #include "screen/layout/gesture.h"
 #include "screen/ui/notification_manager.h"
 #include "screen/ui/status_bar.h"
+#include "kernel.h"
 
 M5EPD_Canvas canvas(&M5.EPD);
 ScreenManager screenManager(&canvas);
@@ -32,7 +33,7 @@ void setup() {
         File appFile = appsFolder.openNextFile();
         while (appFile) {
             String fileName = appFile.name();
-            if (fileName.endsWith(".pls")) {
+            if (fileName.endsWith(".pulse")) {
                 appManager.register_app(fileName.substring(0, fileName.lastIndexOf('.')),
                                         "/Apps/" + fileName);
             }
