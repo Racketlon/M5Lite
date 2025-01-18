@@ -4,7 +4,7 @@ This repository is dedicated to developing and deploying a custom operating syst
 
 ## Folder Structure
 
-´´´bash
+```bash
 /
 ├── apps/                      # Prebuilt Pulse apps for the OS
 │   ├── Notes.pulse
@@ -56,7 +56,7 @@ This repository is dedicated to developing and deploying a custom operating syst
 │       ├── notification_manager.h
 │       └── status_bar.h
 └── tests/                     # General tests for the OS
-´´´
+```
 
 ## Features
 
@@ -78,15 +78,15 @@ This repository is dedicated to developing and deploying a custom operating syst
 
 1. Set Up the Pulse Environment: Run the `install_pulse.py` script to configure the Pulse environment:
 
-´´´bash
+```bash
 python3 flash/install_pulse.py
-´´´
+```
 
 2. Flash the OS: Use the `flash_os.py` script to flash the OS onto the M5Lite:
 
-´´´bash
+```bash
 python3 flash/flash_os.py
-´´´
+```
 
 3. Deploy Applications: Use the Pulse interpreter to execute your `.pls` files, or customize and upload the `main.ino` file in Arduino IDE/PlatformIO.
 
@@ -97,9 +97,9 @@ python3 flash/flash_os.py
 1. Create a `.pls` file describing your application.
 2. Use the Pulse interpreter to parse and execute the application:
 
-´´´bash
+```bash
 pulse <path-to-pulse-file.pulse>
-´´´
+```
 
 ### Example Pulse Program (`helloworld.pls`)
 
