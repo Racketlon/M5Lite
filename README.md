@@ -18,9 +18,6 @@ This repository is dedicated to developing and deploying a custom operating syst
 │   ├── FreeRTOS/              # Optional FreeRTOS kernel (if needed)
 │   ├── kernel.h               # Kernel-related headers
 │   └── main.ino               # Main OS entry point
-├── docs/                      # Documentation
-│   ├── LICENSE
-│   └── README.md
 ├── flash/                     # Scripts for flashing the OS
 │   ├── flash_os.py
 │   └── install_pulse.py
@@ -32,6 +29,7 @@ This repository is dedicated to developing and deploying a custom operating syst
 │   └── System/
 │       ├── file_management.h
 │       └── System.h
+├── LICENSE
 ├── pulse/                     # Pulse programming language and interpreter
 │   ├── compiler/
 │   │   ├── Compiler.h
@@ -47,6 +45,7 @@ This repository is dedicated to developing and deploying a custom operating syst
 │   │   └── Wifi.h
 │   ├── main.py                # Entry point for Pulse interpreter
 │   └── tests/                 # Test cases for the Pulse interpreter
+├── README.md
 ├── screen/                    # UI and screen-related components
 │   ├── layout/
 │   │   ├── app_layout.h
