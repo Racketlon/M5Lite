@@ -1,6 +1,6 @@
-# Custom OS for M5Lite
+# M5Lite
 
-This repository is dedicated to developing and deploying a custom operating system for the M5Lite device. It includes all necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Lite hardware.
+This repository is dedicated to developing and deploying a custom operating system for the M5Paper device. It includes all necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Lite hardware.
 
 ## Folder Structure
 
