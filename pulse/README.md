@@ -9,18 +9,17 @@ Pulse is a custom programming language designed for GUI programming. It translat
 
 ## Folder Structure
 ```
-examples/       # Example Pulse (.pls) files
-    helloworld.pls  # Sample Hello World program in Pulse
-Interpreter.h    # Header file for the interpreter
-Interpreter.py   # Python-based interpreter implementation
-main.py          # Main Python script for running the interpreter
-modules/         # Additional modules like Bluetooth, Network, and System
-    Bluetooth.h      # Header for Bluetooth module
-    Network.h        # Header for Network module
-    System.h         # Header for System module
-__pycache__/     # Cached Python files
-    Interpreter.cpython-313.pyc  # Cached Python bytecode
-README.md        # Project documentation
+compiler/                 # Compiler folder
+    examples/             # Example folder
+        counter.pulse     # Example file of a counter app
+        helloworld.pulse  # Example file of hello world
+    Compiler.h            # Compiler header file
+Interpreter/              # Interpreter folder
+    Interpreter.py        # Interpreter file for debug
+    vm.py                 # VM file for creating a preview
+tests/                    # Test folder
+main.py                   # Main file
+README.md                 # Project documentation
 ```
 
 ## Prerequisites

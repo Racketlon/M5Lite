@@ -36,11 +36,15 @@ This repository is dedicated to developing and deploying a custom operating syst
 │   ├── compiler/
 │   │   ├── Compiler.h
 │   │   └── examples/
-│   │       ├── counter.pls
-│   │       └── helloworld.pls
+│   │       ├── counter.pulse
+│   │       └── helloworld.pulse
 │   ├── interpreter/
 │   │   ├── Interpreter.py
 │   │   └── vm.py
+│   ├── lib/
+│   │   ├── Bluetooth.h
+│   │   ├── System.h
+│   │   └── Wifi.h
 │   ├── main.py                # Entry point for Pulse interpreter
 │   └── tests/                 # Test cases for the Pulse interpreter
 ├── screen/                    # UI and screen-related components

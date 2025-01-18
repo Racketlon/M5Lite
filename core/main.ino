@@ -1,6 +1,6 @@
 #include <M5EPD.h>
 #include <SD.h> // Ensure the correct library is included
-#include "../Pulse/Compiler.h"
+#include "../pulse/compiler/Compiler.h"
 #include "../Screen/screen_manager.h"
 #include "../Screen/gesture.h"
 #include "../Screen/status_bar.h"
