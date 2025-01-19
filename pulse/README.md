@@ -1,11 +1,11 @@
 # Pulse
 
-Pulse is a custom programming language designed for GUI programming. It translates custom syntax into C++, enabling seamless GUI development. The goal is to create a flexible, powerful, and efficient programming language for developers who want a custom solution for GUI programming.
+Pulse is a custom programming language designed for GUI programming. It translates custom syntax into Rust, enabling seamless GUI development. The goal is to create a flexible, powerful, and efficient programming language for developers who want a custom solution for GUI programming.
 
 ## Features
 - Custom syntax designed for GUI programming.
 - Modular architecture with clear separation of components.
-- Automatic translation into C++ for high performance.
+- Automatic translation into Rust for high performance.
 
 ## Folder Structure
 ```
@@ -13,7 +13,7 @@ compiler/                 # Compiler folder
     examples/             # Example folder
         counter.pulse     # Example file of a counter app
         helloworld.pulse  # Example file of hello world
-    Compiler.h            # Compiler header file
+    Compiler.rs           # Compiler header file
 Interpreter/              # Interpreter folder
     Interpreter.py        # Interpreter file for debug
     vm.py                 # VM file for creating a preview

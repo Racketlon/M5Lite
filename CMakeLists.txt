@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 3.16)
 
-# Include the ESP-IDF project build system
+# Include ESP-IDF's project.cmake
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
 # Project name
-project(M5Lite)
+project(M5Paper)
+
+# Add subdirectories
+add_subdirectory(core)
+add_subdirectory(screen)
+add_subdirectory(lib)
+add_subdirectory(pulse)
