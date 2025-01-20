@@ -1,10 +1,12 @@
 # M5Lite
 
-This repository is dedicated to developing and deploying a custom operating system for the M5Paper device in Rust. It includes all necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Paper hardware.
+This repository is dedicated to the development and deployment of a custom operating system for the M5Paper device, implemented in Rust. It provides all the necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Paper hardware.
+
+---
 
 ## Folder Structure
 
-```bash
+```
 /
 ├── apps/                      # Prebuilt Pulse apps for the OS
 │   ├── Notes.pulse
@@ -61,70 +63,110 @@ This repository is dedicated to developing and deploying a custom operating syst
 └── tests/                     # General tests for the OS
 ```
 
+---
+
 ## Features
 
-- Pulse Language Support: Develop GUI-based applications using the Pulse programming language.
-- Modular Design: Organized folder structure for clear separation of responsibilities.
-- Custom OS Core: Based on the M5Paper hardware with additional extensibility via libraries.
-- Prebuilt Apps: Comes with ready-to-use apps like Notes, Settings, Terminal, and Weather.
+- **Pulse Language Support:**
+  - Develop GUI-based applications using the Pulse programming language.
+  - Examples and prebuilt apps demonstrate the versatility of Pulse.
+
+- **Modular Design:**
+  - Organized folder structure for clear separation of responsibilities.
+  - Allows for easy maintenance and expansion.
+
+- **Custom OS Core:**
+  - Designed specifically for the M5Paper hardware.
+  - Built on Rust, with optional FreeRTOS kernel support for real-time features.
+
+- **Prebuilt Apps:**
+  - Ready-to-use apps like Notes, Settings, Terminal, and Weather.
+
+- **Extensibility:**
+  - Easily add new libraries or modify existing components.
+  - Pulse language interpreter included for running custom apps.
+
+---
 
 ## Prerequisites
 
-- Hardware: M5Paper device, compatible microSD card (required for flashing and using the OS).
-- Software:
-    - Python 3.7 or later
-    - Rust
-    - Necessary drivers for M5Lite
-    - Any additional libraries specified in `lib/`
+### Hardware Requirements:
+
+- **Device:** M5Paper
+- **Accessories:** Compatible microSD card (for flashing and storage).
+
+### Software Requirements:
+
+- **Python:** Version 3.7 or later
+- **Rust:** Installed and configured
+- **Drivers:** Necessary drivers for M5Lite development
+- **Dependencies:** Additional libraries specified in the `lib/` directory
+
+---
 
 ## Installation Instructions
 
-1. Set Up the Pulse Environment: Run the `install_pulse.py` script to configure the Pulse environment:
+### 1. Set Up the Pulse Environment
+Run the following command to install the Pulse environment:
 
-```bash
+```
 python3 flash/install_pulse.py
 ```
 
-2. Flash the OS: Use the `flash_os.py` script to flash the OS onto the M5Lite:
+### 2. Flash the OS
+Use the script to flash the OS onto the M5Lite device:
 
-```bash
+```
 python3 flash/flash_os.py
 ```
 
-3. Set Up the ESP-IDF Environment: Clone the ESP-IDF repository and install the required tools:
+### 3. Set Up the ESP-IDF Environment
+Clone the ESP-IDF repository and install the required tools:
 
-```bash
-git clone --recursive https://github.com/espressif/esp-idf.git
+```
+git clone --branch v5.3 --recursive https://github.com/espressif/esp-idf.git esp-idf
 cd esp-idf
 ./install.sh
 . ./export.sh
 ```
 
+---
+
 ## Usage
 
 ### Running Pulse Applications
 
-1. Create a `.pulse` file describing your application.
-2. Use the Pulse interpreter to parse and execute the application:
+1. **Create a Pulse File:** Define your application using the Pulse syntax.
+2. **Execute Using the Interpreter:**
 
-```bash
+```
 pulse <path-to-pulse-file.pulse>
 ```
 
 ### Example Pulse Program (`helloworld.pulse`)
 
-App “Hello World”
+```
+App "Hello World"
 label greeting:
-    text: “Welcome to Pulse”
+    text: "Welcome to Pulse"
     position: center, center
 button okButton:
-    text: “OK”
+    text: "OK"
     position: center, 300
+```
+
+---
 
 ## Contributing
 
-Contributions to improve the OS, libraries, or example applications are welcome! Please create an issue or submit a pull request.
+We welcome contributions to enhance the OS, libraries, or applications. To contribute:
+
+1. Create an issue describing your idea or problem.
+2. Submit a pull request with your changes.
+
+---
 
 ## License
 
-This project is licensed under the terms of the LICENSE file.
+This project is licensed under the terms of the LICENSE file included in the repository.
+

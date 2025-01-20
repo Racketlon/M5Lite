@@ -1,6 +1,11 @@
-// screen/ui/keyboard.rs
+pub struct Keyboard;
 
-pub fn init_keyboard() {
-    // Initialize the on-screen keyboard or input system
-    println!("Keyboard initialized.");
+impl Keyboard {
+    pub fn show() {
+        println!("Keyboard displayed.");
+    }
+
+    pub fn hide() {
+        println!("Keyboard hidden.");
+    }
 }

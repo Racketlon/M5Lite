@@ -1,17 +1,8 @@
-// core/main.rs
+mod kernel;
 
-#![no_std]
-#![no_main]
+use kernel::Kernel;
 
-use core::panic::PanicInfo;
-
-#[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
-    loop {}
-}
-
-#[entry]
-fn main() -> ! {
-    // This is where you initialize everything
-    loop {}
+fn main() {
+    Kernel::init();
+    println!("Core OS started!");
 }

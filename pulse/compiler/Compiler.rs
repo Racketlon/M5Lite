@@ -1,10 +1,7 @@
-// pulse/compiler/Compiler.rs
+pub struct Compiler;
 
-pub fn compile_pulse_code(code: &str) -> Result<(), &'static str> {
-    // Simple mock function to "compile" Pulse code
-    if code.is_empty() {
-        Err("Code is empty")
-    } else {
-        Ok(())
+impl Compiler {
+    pub fn compile(file: &str) {
+        println!("Compiling file: {}", file);
     }
 }
