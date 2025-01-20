@@ -1,6 +1,6 @@
 # M5Lite
 
-This repository is dedicated to developing and deploying a custom operating system for the M5Paper device. It includes all necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Lite hardware.
+This repository is dedicated to developing and deploying a custom operating system for the M5Paper device in Rust. It includes all necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Paper hardware.
 
 ## Folder Structure
 
@@ -65,15 +65,15 @@ This repository is dedicated to developing and deploying a custom operating syst
 
 - Pulse Language Support: Develop GUI-based applications using the Pulse programming language.
 - Modular Design: Organized folder structure for clear separation of responsibilities.
-- Custom OS Core: Based on the M5Lite hardware with additional extensibility via libraries.
+- Custom OS Core: Based on the M5Paper hardware with additional extensibility via libraries.
 - Prebuilt Apps: Comes with ready-to-use apps like Notes, Settings, Terminal, and Weather.
 
 ## Prerequisites
 
-- Hardware: M5Lite device, compatible microSD card (if required for flashing).
+- Hardware: M5Paper device, compatible microSD card (required for flashing and using the OS).
 - Software:
     - Python 3.7 or later
-    - Arduino IDE or PlatformIO
+    - Rust
     - Necessary drivers for M5Lite
     - Any additional libraries specified in `lib/`
 
@@ -104,22 +104,22 @@ cd esp-idf
 
 ### Running Pulse Applications
 
-1. Create a `.pls` file describing your application.
+1. Create a `.pulse` file describing your application.
 2. Use the Pulse interpreter to parse and execute the application:
 
 ```bash
 pulse <path-to-pulse-file.pulse>
 ```
 
-### Example Pulse Program (`helloworld.pls`)
+### Example Pulse Program (`helloworld.pulse`)
 
 App “Hello World”
 label greeting:
-text: “Welcome to Pulse”
-position: center, center
+    text: “Welcome to Pulse”
+    position: center, center
 button okButton:
-text: “OK”
-position: center, 300
+    text: “OK”
+    position: center, 300
 
 ## Contributing
 
