@@ -2,8 +2,6 @@
 
 This repository is dedicated to the development and deployment of a custom operating system for the M5Paper device, implemented in Rust. It provides all the necessary tools, libraries, and scripts for creating and managing applications using the Pulse programming language, as well as flashing the OS onto the M5Paper hardware.
 
----
-
 ## Folder Structure
 
 ```
@@ -63,8 +61,6 @@ This repository is dedicated to the development and deployment of a custom opera
 └── tests/                     # General tests for the OS
 ```
 
----
-
 ## Features
 
 - **Pulse Language Support:**
@@ -86,8 +82,6 @@ This repository is dedicated to the development and deployment of a custom opera
   - Easily add new libraries or modify existing components.
   - Pulse language interpreter included for running custom apps.
 
----
-
 ## Prerequisites
 
 ### Hardware Requirements:
@@ -101,8 +95,6 @@ This repository is dedicated to the development and deployment of a custom opera
 - **Rust:** Installed and configured
 - **Drivers:** Necessary drivers for M5Lite development
 - **Dependencies:** Additional libraries specified in the `lib/` directory
-
----
 
 ## Installation Instructions
 
@@ -130,8 +122,6 @@ cd esp-idf
 . ./export.sh
 ```
 
----
-
 ## Usage
 
 ### Running Pulse Applications
@@ -155,16 +145,12 @@ button okButton:
     position: center, 300
 ```
 
----
-
 ## Contributing
 
 We welcome contributions to enhance the OS, libraries, or applications. To contribute:
 
 1. Create an issue describing your idea or problem.
 2. Submit a pull request with your changes.
-
----
 
 ## License
 

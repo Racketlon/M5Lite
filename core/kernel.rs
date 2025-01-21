@@ -6,5 +6,5 @@ impl Kernel {
         println!("Kernel initialized.");
     }
 
-    pub fn start() { println!("Starting M5Lite"); }
+    pub fn boot() { println!("Booting M5Lite"); }
 }
